@@ -8,6 +8,8 @@ import {
     EcommerceImpressions,
     EcommercePurchase,
     EcommerceRemove,
+    FirstPartyParamsHashedParameters,
+    FirstPartyParamsParameters,
     YaMetrika
 } from './types'
 
@@ -69,6 +71,18 @@ export class EmptyYaMetrika implements YaMetrika {
     userParams() {
       if (this.config.debug) {
         console.log("[vue-yandex-metrika] userParams:", arguments);
+      }
+    }
+
+    firstPartyParams(parameters: FirstPartyParamsParameters) {
+      if (this.config.debug) {
+        console.log("[vue-yandex-metrika] firstPartyParams:", arguments);
+      }
+    }
+
+    firstPartyParamsHashed(parameters: FirstPartyParamsHashedParameters) {
+      if (this.config.debug) {
+        console.log("[vue-yandex-metrika] firstPartyParamsHashed:", arguments);
       }
     }
 
