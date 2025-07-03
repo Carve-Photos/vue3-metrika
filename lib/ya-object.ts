@@ -8,6 +8,7 @@ import {
     FirstPartyParamsHashedParameters,
     FirstPartyParamsParameters,
     SubParams,
+    ReachGoalParams,
     YaMetrika
 } from './types'
 import {prepareEcommerceDataLayer} from './ecommerce'
@@ -52,7 +53,7 @@ export class YaMetrikaObject implements YaMetrika {
     reachGoal(
         target: string,
         params?:
-            | { order_price?: number | undefined; currency?: string | undefined } & Record<string, any>
+            | ReachGoalParams,
             | undefined,
         callback?: (() => void) | undefined,
         ctx?: any
