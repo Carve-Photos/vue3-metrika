@@ -5,6 +5,8 @@ import {
     EcommerceImpressions,
     EcommercePurchase,
     EcommerceRemove,
+    FirstPartyParamsHashedParameters,
+    FirstPartyParamsParameters,
     SubParams,
     YaMetrika
 } from './types'
@@ -70,6 +72,14 @@ export class YaMetrikaObject implements YaMetrika {
         console.error('Method not implemented.')
     }
 
+    firstPartyParams(parameters: FirstPartyParamsParameters): void {
+        console.error('Method not implemented.')
+    }
+
+    firstPartyParamsHashed(parameters: FirstPartyParamsHashedParameters): void {
+        console.error('Method not implemented.')
+    }
+
     ecommerceImpressions(data: EcommerceImpressions): void {
         this.pushToDatalayer(data)
     }
@@ -111,6 +121,8 @@ export class YaMetrikaObject implements YaMetrika {
         this.replacePhones = m.replacePhones?.bind(m)
         this.setUserID = m.setUserID?.bind(m)
         this.userParams = m.userParams?.bind(m)
+        this.firstPartyParams = m.firstPartyParams?.bind(m)
+        this.firstPartyParamsHashed = m.firstPartyParamsHashed?.bind(m)
     }
 
     private pushToDatalayer(data: unknown) {
