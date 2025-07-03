@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kennardy/vue-yandex-metrika.git"
+    "url": "git+https://github.com/Carve-Photos/vue3-metrika.git"
   },
   "keywords": [
     "vue",
@@ -43,9 +43,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kennardy/vue-yandex-metrika/issues"
+    "url": "https://github.com/Carve-Photos/vue3-metrika/issues"
   },
-  "homepage": "https://github.com/kennardy/vue-yandex-metrika",
+  "homepage": "https://github.com/Carve-Photos/vue3-metrika",
   "devDependencies": {
     "@babel/types": "^7.20.7",
     "@types/node": "^18.11.18",
