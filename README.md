@@ -1,15 +1,7 @@
 
 # Vue Yandex Metrika Plugin with TypeScript
 **yandex-metrika-vue3** allows you to send data about visited pages to [Yandex Metrika].
-## Installation
-Install with [yarn]:
-```bash
-$ yarn add yandex-metrika-vue3
-```
-Install with [npm]:
-```bash
-$ npm install yandex-metrika-vue3 --save
-```
+
 ## Ways to use
 ### <a name="autotracking">Autotracking</a>
 Pass the `VueRouter` instance to the plugin and let it handle everything for you ([Metrika API] is also available):
