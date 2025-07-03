@@ -158,6 +158,24 @@ export declare class YaMetrika {
   replacePhones(): void;
   setUserID(userID: string): void;
   userParams(parameters: { [key: string]: any }): void;
+  firstPartyParams(parameters: FirstPartyParamsParameters): void;
+  firstPartyParamsHashed(parameters: FirstPartyParamsHashedParameters): void;
+}
+
+export interface FirstPartyParamsParameters {
+  email?: string;
+  phone_number?: string;
+  first_name?: string;
+  last_name?: string;
+  yandex_cid?: string;
+}
+
+export interface FirstPartyParamsHashedParameters {
+  email?: string;
+  phone_number?: string;
+  first_name?: string;
+  last_name?: string;
+  yandex_cid?: string;
 }
 
 /**
