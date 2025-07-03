@@ -151,7 +151,7 @@ export declare class YaMetrika {
     params?: {
       order_price?: number;
       currency?: string;
-    },
+    } & Record<string, any>,
     callback?: () => void,
     ctx?: any
   ): void;
