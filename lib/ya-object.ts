@@ -52,7 +52,7 @@ export class YaMetrikaObject implements YaMetrika {
     reachGoal(
         target: string,
         params?:
-            | { order_price?: number | undefined; currency?: string | undefined }
+            | { order_price?: number | undefined; currency?: string | undefined } & Record<string, any>
             | undefined,
         callback?: (() => void) | undefined,
         ctx?: any
