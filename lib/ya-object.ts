@@ -53,7 +53,7 @@ export class YaMetrikaObject implements YaMetrika {
     reachGoal(
         target: string,
         params?:
-            | ReachGoalParams,
+            | ReachGoalParams
             | undefined,
         callback?: (() => void) | undefined,
         ctx?: any
