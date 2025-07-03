@@ -83,6 +83,13 @@ export declare interface SubParams {
   referer?: string;
   title?: string;
 }
+
+export interface ReachGoalParams {
+    order_price?: number;
+    currency?: string;
+    [key: string]: any; 
+}
+
 interface YaMetrikaInit {
   new (params: YaOptions): YaMetrika;
 }
@@ -148,10 +155,7 @@ export declare class YaMetrika {
   ): void;
   reachGoal(
     target: string,
-    params?: {
-      order_price?: number;
-      currency?: string;
-    } & Record<string, any>,
+    params?: ReachGoalParams,
     callback?: () => void,
     ctx?: any
   ): void;
